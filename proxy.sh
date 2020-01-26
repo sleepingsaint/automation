@@ -26,7 +26,7 @@ bashrc_proxy_list=(
 	'export https_proxy=https://172.16.2.30:8080/'
 )
 
-read -p "Change Proxy add / remove Enter [a/r]: " proxy_change_state
+read -p "Change Proxy add(a) / remove(r) Enter [a/r]: " proxy_change_state
 
 # function to handle the addition to proxies
 add_proxy(){
