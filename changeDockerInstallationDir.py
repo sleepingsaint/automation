@@ -26,9 +26,9 @@ def changeDir(config, dir):
 		subprocess.run(["systemctl", "restart", "docker"])
 		
 		print("[step 4]: Getting the updated installation path")
-		dir = getDockerRootDir()
+		updated_dir = getDockerRootDir()
 
-		print(f"[SUCCESS]: Docker installation changed to {dir}")
+		print(f"[SUCCESS]: Docker installation changed to {updated_dir}")
 	except PermissionError:
 		print("[ERROR]: You don't have sufficient permissions to perform this operation. Please try again with sudo!")
 	except FileNotFoundError:
